@@ -43,3 +43,8 @@ function pickColor(){
     var random = Math.floor(Math.random() * colors.length);
     return colors[random];
 }
+
+function test(){
+    // this is a test function placeholder
+    // will be removed later
+}
