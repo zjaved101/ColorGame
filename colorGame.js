@@ -24,9 +24,18 @@ for(var i = 0; i < squares.length; i++){
         //compare color to picked color
         if(clickedColor === pickedColor){
             messageDisplay.textContent = 'Correct!';
+            changeColors(clickedColor);
         } else{
             this.style.background = '#232323';
             messageDisplay.textContent = 'Try Again';
         }
     });
+}
+
+function changeColors(color){
+    //loop through all squares
+    for(var i = 0; i < colors.length; i++){
+        squares[i].style.backgroundColor = color;
+    }
+
 }
